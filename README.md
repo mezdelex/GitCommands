@@ -1,5 +1,4 @@
-# GitCommands
-Git commands repository
+# Git Commands
 
 |Resource|URI|
 |:-:|:-:|
