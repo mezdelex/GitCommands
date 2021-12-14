@@ -1,9 +1,9 @@
-Create sub-branch  => git checkout -b <child_branch> <father_branch>
+Create local sub-branch  => git checkout -b <child_branch> <father_branch>
 
-Add and commit     => git commit -am "Message"
+Pull from remote father  => git branch --set-upstream-to=origin/<father_branch> <child_branch>
+                            git pull
 
-Merge sub-branch   => git checkout <father_branch>
-                      git merge --no-ff <child_branch>
+Create remote sub-branch => git push origin <child_branch>
 
-Push both branches => git push origin <father_branch>
-                      git push origin <child_branch>
+Merge sub-branch         => git checkout <father_branch>
+                            git merge --no-ff <child_branch>
