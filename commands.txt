@@ -1,9 +1,9 @@
-Create local sub-branch  => git checkout -b <child_branch> <father_branch>
+Create local sub-branch   => git checkout -b <child_branch> <father_branch>
 
-Pull from remote father  => git branch --set-upstream-to=origin/<father_branch> <child_branch>
-                            git pull
+Pull from remote father   => git branch --set-upstream-to=origin/<father_branch> <child_branch>
+                             git pull
 
-Create remote sub-branch => git push origin <child_branch>
+Push to remote sub-branch => git push origin <child_branch>
 
-Merge sub-branch         => git checkout <father_branch>
-                            git merge --no-ff <child_branch>
+Merge sub-branch          => git checkout <father_branch>
+                             git merge --no-ff <child_branch>
