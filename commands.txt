@@ -1,9 +1,16 @@
+Check branch info         => git branch -vv
+
 Create local sub-branch   => git checkout -b <child_branch> <father_branch>
 
 Pull from remote father   => git branch --set-upstream-to=origin/<father_branch> <child_branch>
                              git pull
 
+Pull favoring father      => git pull -X theirs
+
 Push to remote sub-branch => git push origin <child_branch>
 
 Merge sub-branch          => git checkout <father_branch>
                              git merge --no-ff <child_branch>
+
+Reset local branch        => git checkout <branch_to_reset> 
+                             git reset --hard origin/<branch_to_load>
