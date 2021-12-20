@@ -1,11 +1,8 @@
-Check branch info         => git branch -vv
-
 Create local sub-branch   => git checkout -b <child_branch> <father_branch>
 
-Pull from remote father   => git branch --set-upstream-to=origin/<father_branch> <child_branch>
-                             git pull
+Check branch info         => git branch -vv
 
-Pull favoring remote      => git pull -X theirs
+Set remote upstream       => git branch --set-upstream-to=origin/<branch>
 
 Push to remote sub-branch => git push origin <child_branch>
 
