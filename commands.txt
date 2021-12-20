@@ -19,4 +19,3 @@ Revert pushed merge       => git checkout <branch_to_revert>
                              git log (and copy the last commit hash)
                              git revert -m 1 <commit_hash> (:! and press enter in the Vim window)
                              git push
-                    
