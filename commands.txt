@@ -2,9 +2,9 @@ Create local sub-branch   => git checkout -b <child_branch> <father_branch>
 
 Check branch info         => git branch -vv
 
-Set remote upstream       => git branch --set-upstream-to=origin/<branch>
+Set remote upstream       => git branch -u origin/<branch>
 
-Push to remote sub-branch => git push origin <child_branch>
+Push to remote sub-branch => git push origin <branch>
 
 Merge sub-branch          => git checkout <father_branch>
                              git merge --no-ff <child_branch>
@@ -18,3 +18,7 @@ Revert pushed merge       => git checkout <branch_to_revert>
                              git log (and copy revert commit hash)
                              git revert -m 1 <commit_hash> (:q and press enter in the Vim window)
                              git push
+
+Delete local branch       => git branch -d <branch>
+
+Delete remote branch      => git push origin --delete <branch>
