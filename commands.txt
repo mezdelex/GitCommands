@@ -1,8 +1,8 @@
-Create local sub-branch   => git checkout -b <child_branch> <father_branch>
+Create local sub-branch   => git checkout -b <child_branch>
 
 Check branch info         => git branch -vv
 
-Set remote upstream       => git branch -u origin/<branch>
+Set remote upstream       => git branch -u origin <branch>
 
 Push to remote sub-branch => git push origin <branch>
 
@@ -10,7 +10,7 @@ Merge sub-branch          => git checkout <father_branch>
                              git merge --no-ff <child_branch>
 
 Reset local branch        => git checkout <branch_to_reset> 
-                             git reset --hard origin/<branch_to_load>
+                             git reset --hard origin <branch_to_load>
 
 Revert pushed merge       => git checkout <branch_to_revert>
                              git log (and copy the merge commit hash)
