@@ -1,6 +1,6 @@
 Create local sub-branch                 => git checkout -b <child_branch>
 Check branch info                       => git branch -vv
-Set remote upstream                     => git branch -u <remote> <branch>
+Set remote upstream                     => git branch -u <remote/branch>
 Push to remote and set upstream         => git push -u <remote> <branch>
 Merge sub-branch                        => git checkout <father_branch>
                                            git merge --no-ff <child_branch>
