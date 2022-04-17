@@ -1,24 +1,16 @@
-Create local sub-branch   => git checkout -b <child_branch>
-
-Check branch info         => git branch -vv
-
-Set remote upstream       => git branch -u origin <branch>
-
-Push to remote sub-branch => git push origin <branch>
-
-Merge sub-branch          => git checkout <father_branch>
-                             git merge --no-ff <child_branch>
-
-Reset local branch        => git checkout <branch_to_reset> 
-                             git reset --hard origin <branch_to_load>
-
-Revert pushed merge       => git checkout <branch_to_revert>
-                             git log (and copy the merge commit hash)
-                             git revert -m 1 <commit_hash> (:q and press enter in the Vim window)
-                             git log (and copy revert commit hash)
-                             git revert -m 1 <commit_hash> (:q and press enter in the Vim window)
-                             git push
-
-Delete local branch       => git branch -d <branch>
-
-Delete remote branch      => git push origin --delete <branch>
+Create local sub-branch                 => git checkout -b <child_branch>
+Check branch info                       => git branch -vv
+Set remote upstream                     => git branch -u <remote> <branch>
+Push to remote and set upstream         => git push -u <remote> <branch>
+Merge sub-branch                        => git checkout <father_branch>
+                                           git merge --no-ff <child_branch>
+Reset local branch                      => git checkout <branch_to_reset> 
+                                           git reset --hard <remote> <branch_to_load>
+Revert pushed merge                     => git checkout <branch_to_revert>
+                                           git log (and copy the merge commit hash)
+                                           git revert -m 1 <commit_hash> (:q and press enter in the Vim window)
+                                           git log (and copy revert commit hash)
+                                           git revert -m 1 <commit_hash> (:q and press enter in the Vim window)
+                                           git push
+Delete local branch                     => git branch -d/D <branch>
+Delete remote branch                    => git push <remote> --delete <branch>
