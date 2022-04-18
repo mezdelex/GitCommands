@@ -16,3 +16,4 @@ Stash local branch                      => git stash .
 Recover local branch stash              => git stash pop
 Delete local branch                     => git branch -d/D <branch>
 Delete remote branch                    => git push <remote> --delete <branch>
+Formatted log                           => git log --graph --pretty=format:'%C(blue)%ai %C(yellow)%H %C(green)%an %C(red)%s'
