@@ -12,5 +12,7 @@ Revert pushed merge                     => git checkout <branch_to_revert>
                                            git log (and copy revert commit hash)
                                            git revert -m 1 <commit_hash> (:q and press enter in the Vim window)
                                            git push
+Stash local branch                      => git stash .
+Recover local branch stash              => git stash pop
 Delete local branch                     => git branch -d/D <branch>
 Delete remote branch                    => git push <remote> --delete <branch>
