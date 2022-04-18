@@ -1,5 +1,7 @@
+Show local branches info                => git branch -vv
+Show remote branches info               => git branch -rvv
+Show formatted log                      => git log --graph --pretty=format:'%C(blue)%ai %C(yellow)%H %C(green)%an %C(red)%s'
 Create local sub-branch                 => git checkout -b <child_branch>
-Check branch info                       => git branch -vv
 Set remote upstream                     => git branch -u <remote/branch>
 Push to remote and set upstream         => git push -u <remote> <branch>
 Merge sub-branch                        => git checkout <father_branch>
@@ -16,4 +18,3 @@ Stash local branch                      => git stash .
 Recover local branch stash              => git stash pop
 Delete local branch                     => git branch -d/D <branch>
 Delete remote branch                    => git push <remote> --delete <branch>
-Formatted log                           => git log --graph --pretty=format:'%C(blue)%ai %C(yellow)%H %C(green)%an %C(red)%s'
