@@ -1,7 +1,10 @@
 Show local branches info                => git branch -vv
 Show remote branches info               => git branch -rvv
 Show formatted log                      => git log --graph --pretty=format:'%C(blue)%ai %C(yellow)%H %C(green)%an %C(red)%s'
-Create local sub-branch                 => git checkout -b <child_branch>
+Add remote repository                   => git remote add origin <uri>
+Fetch origin                            => git fetch origin
+Checkout branch                         => git checkout <branch>
+Create and checkout local child branch  => git checkout -b <child_branch>
 Set remote upstream                     => git branch -u <remote/branch>
 Add items to push                       => git add .
 Add commit message                      => git commit -m "<message>"
